@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2> Loop "for" com continue statement</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) { // Para um i=0, o loop "for" vai fazendo progredir o seu valor em uma unidade em cada iteração, até que o seu valor seja 9.
+            if (i === 3) {
+                continue;
+            } // O continue irá fazer o ciclo "for" saltar a iteração quando 1=3, fazendo que a variável "i" só possa assumir valores entre 0 e 10, excluindo o 3.
+            text += "O número é  " + i + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text; // Escrever na página web "O número é..."
+    </script>
+
+</body>
+
+</html>
